@@ -1,15 +1,30 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 
 const NavBar = () => {
   return (
     <header className="blog__header">
-      <img src={logo} alt="logo" />
+      <NavLink to="/">
+        <img src={logo} alt="logo" />
+      </NavLink>
       <nav>
-        <button className="btn"> Blog </button>
-        <button className="btn"> Cursos y Talleres </button>
-        <button className="btn"> Sobre mi </button>
-        <button className="btn__contact"> Contacto </button>
+        <NavLink exact to="/blog" className="btn">
+          {' '}
+          Blog{' '}
+        </NavLink>
+        <NavLink exact to="/workshops" className="btn">
+          {' '}
+          Cursos y Talleres{' '}
+        </NavLink>
+        <NavLink exact to="/aboutme" className="btn">
+          {' '}
+          Sobre mi{' '}
+        </NavLink>
+        <NavLink exact to="/contact" className="btn__contact">
+          {' '}
+          Contacto{' '}
+        </NavLink>
       </nav>
     </header>
   );
