@@ -1,0 +1,37 @@
+.btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 7px 10px 7px 10px; //top right bottom left
+
+  transition: color 0.3s ease;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: darken($color: white, $amount: 100);
+  }
+}
+
+.btn__contact {
+  background-color: $secondary;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  padding: 7px 10px 7px 10px;
+
+  transition: color 0.3s ease;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: darken($color: white, $amount: 100);
+  }
+}

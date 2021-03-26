@@ -1,13 +1,15 @@
 import React from 'react';
+import logo from '../../assets/logo.png';
 
 const NavBar = () => {
   return (
-    <header>
-      <nav className="blog__navbar">
-        <button> Blog </button>
-        <button> Cursos y Talleres </button>
-        <button> Sobre mi </button>
-        <button> Contactame </button>
+    <header className="blog__header">
+      <img src={logo} alt="logo" />
+      <nav>
+        <button className="btn"> Blog </button>
+        <button className="btn"> Cursos y Talleres </button>
+        <button className="btn"> Sobre mi </button>
+        <button className="btn__contact"> Contacto </button>
       </nav>
     </header>
   );
