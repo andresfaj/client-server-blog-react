@@ -5,3 +5,7 @@
   align-items: center;
   padding: 10px 20px 10px 20px; //top right bottom left
 }
+
+.blog__header__btn__active {
+  background-color: lighten($color: $primary, $amount: 4);
+}
