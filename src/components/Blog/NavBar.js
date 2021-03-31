@@ -36,11 +36,11 @@ const NavBar = () => {
           {' '}
           Sobre mi{' '}
         </NavLink>
-        <NavLink exact to="/contact" className="btn__contact">
-          {' '}
-          Contacto{' '}
-        </NavLink>
       </nav>
+      <NavLink exact to="/contact" className="btn__contact">
+        {' '}
+        Contacto{' '}
+      </NavLink>
     </header>
   );
 };
