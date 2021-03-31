@@ -3,3 +3,7 @@
   box-sizing: border-box; //Ayuda a recalcular el width de un elemento restandole el padding/border para que no se salga del navegador, evita scroll horizontal
   font-family: 'Montserrat', sans-serif;
 }
+
+html {
+  font-size: 62.5%; //1rem = 10px
+}
