@@ -1,0 +1,52 @@
+.blog-screen__main {
+  padding: 40px 100px 0px; //Top - (left & right) - bottom
+}
+
+.blog-screen__s__one {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-screen__s__one img {
+  width: 300px;
+  height: 500px;
+  margin-right: 40px;
+}
+
+.blog-screen__s__one__div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 700px;
+}
+
+.blog-screen__s__one__div button {
+  background-color: $secondary;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: darken($color: white, $amount: 100);
+  }
+}
+
+.blog-screen__s__one h1 {
+  font-size: 40px;
+  text-align: right;
+}
+
+.blog-screen__s__one p {
+  font-size: 20px;
+  text-align: right;
+}
