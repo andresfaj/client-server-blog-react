@@ -1,5 +1,6 @@
 import React from 'react';
 import cta from '../../../assets/cta.jpg';
+import women from '../../../assets/women.jpg';
 
 const HomeScreen = () => {
   return (
@@ -19,10 +20,29 @@ const HomeScreen = () => {
           <button>Quiero Aprender</button>
         </div>
       </section>
-      <section className="home-screen__main__two">
+      <section className="home-screen__s__two">
         <q>
-          <cite>La vida es un mosaico de roles y experiencias</cite>
+          <cite> - La vida es un mosaico de roles y experiencias - </cite>
         </q>
+      </section>
+      <section className="home-screen__s__three">
+        <div className="home-screen__s__three__div">
+          <h3>¿Quién es Naydú?</h3>
+          <p>
+            Officia ullamco aliquip voluptate anim aliquip proident sint culpa
+            adipisicing laborum. Est dolor mollit dolor aliquip nostrud ipsum in
+            elit. Lorem velit ut minim do aliquip est incididunt ut quis
+            voluptate non. Aliquip pariatur minim laboris incididunt sint
+            consequat ex ad voluptate. Deserunt esse esse sit pariatur pariatur
+            laboris qui elit cillum laboris proident magna reprehenderit
+            cupidatat. Amet ad minim laborum eiusmod sit est fugiat adipisicing
+            ea dolore. Irure sint ut ut occaecat proident et in. Aliqua quis
+            commodo ut aliquip consectetur ex id sint anim id aliqua nulla. Enim
+            veniam sit eu sit esse officia anim anim. Deserunt quis qui ad duis
+            Lorem est aliqua anim irure. Excepteur mollit incididunt officia
+          </p>
+        </div>
+        <img src={women} alt="home" />
       </section>
     </main>
   );

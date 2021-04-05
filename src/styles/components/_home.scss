@@ -52,15 +52,48 @@
 
 //Section2
 
-.home-screen__main__two {
+.home-screen__s__two {
   padding: 0px 100px 0px;
   margin-top: 40px;
   text-align: center;
 }
 
-.home-screen__main__two q {
+.home-screen__s__two q {
   font-size: 3rem;
   color: $primary;
   text-transform: uppercase;
   margin: auto;
+}
+
+//Section3
+
+.home-screen__s__three {
+  display: flex;
+  padding: 0px 100px 0px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.home-screen__s__three img {
+  width: 300px;
+  height: 500px;
+}
+
+.home-screen__s__three__div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 40px;
+  max-width: 700px;
+}
+
+.home-screen__s__three__div h3 {
+  font-size: 40px;
+  text-align: right;
+}
+
+.home-screen__s__three__div p {
+  font-size: 20px;
+  text-align: justify;
 }
