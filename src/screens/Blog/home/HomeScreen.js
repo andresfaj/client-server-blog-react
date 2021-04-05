@@ -3,10 +3,10 @@ import cta from '../../../assets/cta.jpg';
 
 const HomeScreen = () => {
   return (
-    <main className="blog-screen__main">
-      <section className="blog-screen__s__one">
-        <img src={cta} alt="Blog" />
-        <div className="blog-screen__s__one__div">
+    <main>
+      <section className="home-screen__s__one">
+        <img src={cta} alt="home" />
+        <div className="home-screen__s__one__div">
           <h1>
             {' '}
             Aprende, descubre <br /> y aplica como manejar tus emociones
@@ -18,6 +18,11 @@ const HomeScreen = () => {
           </p>
           <button>Quiero Aprender</button>
         </div>
+      </section>
+      <section className="home-screen__main__two">
+        <q>
+          <cite>La vida es un mosaico de roles y experiencias</cite>
+        </q>
       </section>
     </main>
   );
