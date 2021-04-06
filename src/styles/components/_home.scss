@@ -41,12 +41,12 @@
 }
 
 .home-screen__s__one h1 {
-  font-size: 40px;
+  font-size: 4rem;
   text-align: right;
 }
 
 .home-screen__s__one p {
-  font-size: 20px;
+  font-size: 2rem;
   text-align: right;
 }
 
@@ -96,4 +96,33 @@
 .home-screen__s__three__div p {
   font-size: 20px;
   text-align: justify;
+}
+
+//Section four
+
+.home-screen__s__four {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 0px 100px 0px;
+}
+
+.home-screen__s__four__main {
+  align-items: center;
+  background-color: lighten($color: $secondary, $amount: 20);
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 40px;
+  width: 1000px;
+}
+
+.home-screen__s__four__main__title {
+  font-size: 3.5rem;
+}
+
+.home-screen__s__four__social ul {
+  display: flex;
+  flex-direction: row;
 }

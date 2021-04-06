@@ -6,7 +6,7 @@ const HomeScreen = () => {
   return (
     <main>
       <section className="home-screen__s__one">
-        <img src={cta} alt="home" />
+        <img src={cta} alt="home" title="Maneja tus emociones" />
         <div className="home-screen__s__one__div">
           <h1>
             {' '}
@@ -43,6 +43,21 @@ const HomeScreen = () => {
           </p>
         </div>
         <img src={women} alt="home" />
+      </section>
+      <section className="home-screen__s__four">
+        <div className="home-screen__s__four__main">
+          <h3 className="home-screen__s__four__main__title">
+            {' '}
+            Sigueme en redes sociales{' '}
+          </h3>
+          <div className="home-screen__s__four__social">
+            <ul>
+              <li>FB</li>
+              <li>INSTA</li>
+              <li>YT</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
   );
