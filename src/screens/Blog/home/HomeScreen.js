@@ -1,6 +1,11 @@
 import React from 'react';
 import cta from '../../../assets/cta.jpg';
 import women from '../../../assets/women.jpg';
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaYoutubeSquare,
+} from 'react-icons/fa';
 
 const HomeScreen = () => {
   return (
@@ -52,9 +57,27 @@ const HomeScreen = () => {
           </h3>
           <div className="home-screen__s__four__social">
             <ul>
-              <li>FB</li>
-              <li>INSTA</li>
-              <li>YT</li>
+              <a
+                href="https://www.facebook.com/naydujaramillo"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaFacebookSquare className="home-screen__s__four__social__icon" />
+              </a>
+              <a
+                href="https://www.instagram.com/naydujaramillo/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaInstagramSquare className="home-screen__s__four__social__icon" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCUDhSKpUBFNlQhrbgUjKeRA"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaYoutubeSquare className="home-screen__s__four__social__icon" />
+              </a>
             </ul>
           </div>
         </div>
