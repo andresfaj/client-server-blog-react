@@ -13,14 +13,16 @@ const BlogRouter = () => {
     <>
       <NavBar />
 
-      <Switch>
-        <Route exact path="/" component={HomeScreen} />
-        <Route exact path="/blog" component={BlogScreen} />
-        <Route exact path="/workshops" component={WorkShopScreen} />
-        <Route exact path="/aboutme" component={AboutMeScreen} />
-        <Route exact path="/contact" component={ContactScreen} />
-        <Redirect to="/" />
-      </Switch>
+      <main className="blog__main__content">
+        <Switch>
+          <Route exact path="/" component={HomeScreen} />
+          <Route exact path="/blog" component={BlogScreen} />
+          <Route exact path="/workshops" component={WorkShopScreen} />
+          <Route exact path="/aboutme" component={AboutMeScreen} />
+          <Route exact path="/contact" component={ContactScreen} />
+          <Redirect to="/" />
+        </Switch>
+      </main>
 
       <Footer />
     </>

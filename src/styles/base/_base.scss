@@ -7,3 +7,9 @@
 html {
   font-size: 62.5%; //1rem = 10px
 }
+
+.blog__main__content {
+  min-height: calc(
+    100vh - 80px - 60px - 40px
+  ); //el contenido principal ocupa el 100% de viewport height y se le resta 80px del heigth footer - 60 del header y 40 del margin top del footer
+}
