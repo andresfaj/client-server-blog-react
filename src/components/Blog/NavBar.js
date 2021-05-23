@@ -1,46 +1,92 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.png';
+import { FaFacebook, FaInstagram, FaYoutube, FaBars } from 'react-icons/fa';
+import { AiOutlineClose } from 'react-icons/ai';
 
-const NavBar = () => {
+const NavBar = ({ history }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenu = (close = true) => {
+    close ? setMenuOpen(!menuOpen) : setMenuOpen(close);
+  };
+
   return (
-    <header className="blog__header">
-      <Link to="/">
-        <img src={logo} alt="logo" />
-      </Link>
+    <header className={`blog__header ${menuOpen ? 'menu-active' : ''}`}>
+      <section className="blog__header_s1">
+        <Link onClick={() => handleMenu(false)} to="/">
+          <img src={logo} alt="logo" />
+        </Link>
+        {menuOpen ? (
+          <AiOutlineClose
+            onClick={handleMenu}
+            className="blog__header_s1_menu-icon"
+          />
+        ) : (
+          <FaBars onClick={handleMenu} className="blog__header_s1_menu-icon" />
+        )}
+      </section>
       <nav>
-        <NavLink
-          exact
-          to="/blog"
-          className="btn"
-          activeClassName="blog__header__btn__active"
-        >
-          {' '}
-          Blog{' '}
-        </NavLink>
-        <NavLink
-          exact
-          to="/workshops"
-          className="btn"
-          activeClassName="blog__header__btn__active"
-        >
-          {' '}
-          Cursos y Talleres{' '}
-        </NavLink>
-        <NavLink
-          exact
-          to="/aboutme"
-          className="btn"
-          activeClassName="blog__header__btn__active"
-        >
-          {' '}
-          Sobre mi{' '}
-        </NavLink>
+        <section className="blog__header_s2">
+          <NavLink
+            exact
+            to="/blog"
+            className="btn"
+            activeClassName="blog__header__btn__active"
+            onClick={handleMenu}
+          >
+            {' '}
+            Blog{' '}
+          </NavLink>
+          <NavLink
+            exact
+            to="/workshops"
+            className="btn"
+            activeClassName="blog__header__btn__active"
+            onClick={handleMenu}
+          >
+            {' '}
+            Cursos y Talleres{' '}
+          </NavLink>
+          <NavLink
+            exact
+            to="/aboutme"
+            className="btn"
+            activeClassName="blog__header__btn__active"
+            onClick={handleMenu}
+          >
+            {' '}
+            Sobre mi{' '}
+          </NavLink>
+        </section>
       </nav>
-      <NavLink exact to="/contact" className="btn__contact">
+      <section className="blog__header_s3">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.facebook.com/naydujaramillo"
+        >
+          <FaFacebook className="blog__header_s3_socialm" />
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.instagram.com/naydujaramillo/"
+        >
+          <FaInstagram className="blog__header_s3_socialm" />
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.youtube.com/channel/UCUDhSKpUBFNlQhrbgUjKeRA"
+        >
+          <FaYoutube className="blog__header_s3_socialm" />
+        </a>
+      </section>
+      {/* <NavLink exact to="/contact" className="btn__contact hidden__mobile">
         {' '}
         Contacto{' '}
-      </NavLink>
+      </NavLink> */}
     </header>
   );
 };

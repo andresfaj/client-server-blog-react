@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router';
-import { Footer } from '../components/Blog/Footer';
+// import { Footer } from '../components/Blog/Footer';
 import NavBar from '../components/Blog/NavBar';
 import AboutMeScreen from '../screens/Blog/about-me/AboutMeScreen';
 import BlogScreen from '../screens/Blog/blog/BlogScreen';
@@ -24,7 +24,7 @@ const BlogRouter = () => {
         </Switch>
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
