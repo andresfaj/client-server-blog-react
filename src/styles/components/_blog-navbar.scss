@@ -55,3 +55,34 @@
     display: inline;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .blog__header {
+    // height: 100vh;
+    // align-items: center;
+    // background-color: $primary;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px; //top right bottom left
+    width: 100%;
+  }
+
+  .blog__header_s1 {
+    // display: flex;
+    width: auto;
+  }
+
+  .blog__header_s1_menu-icon {
+    display: none;
+  }
+
+  .blog__header_s2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .blog__header_s3 {
+    display: none;
+  }
+}

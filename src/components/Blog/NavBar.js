@@ -33,7 +33,7 @@ const NavBar = () => {
             to="/blog"
             className="btn"
             activeClassName="blog__header__btn__active"
-            onClick={handleMenu}
+            onClick={() => handleMenu(false)}
           >
             {' '}
             Blog{' '}
@@ -43,7 +43,7 @@ const NavBar = () => {
             to="/workshops"
             className="btn"
             activeClassName="blog__header__btn__active"
-            onClick={handleMenu}
+            onClick={() => handleMenu(false)}
           >
             {' '}
             Cursos y Talleres{' '}
@@ -53,7 +53,7 @@ const NavBar = () => {
             to="/aboutme"
             className="btn"
             activeClassName="blog__header__btn__active"
-            onClick={handleMenu}
+            onClick={() => handleMenu(false)}
           >
             {' '}
             Sobre mi{' '}
@@ -62,7 +62,7 @@ const NavBar = () => {
             exact
             to="/contact"
             className="btn__contact"
-            onClick={handleMenu}
+            onClick={() => handleMenu(false)}
           >
             {' '}
             Contacto{' '}
