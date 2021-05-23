@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png';
 import { FaFacebook, FaInstagram, FaYoutube, FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 
-const NavBar = ({ history }) => {
+const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenu = (close = true) => {
@@ -58,6 +58,15 @@ const NavBar = ({ history }) => {
             {' '}
             Sobre mi{' '}
           </NavLink>
+          <NavLink
+            exact
+            to="/contact"
+            className="btn__contact"
+            onClick={handleMenu}
+          >
+            {' '}
+            Contacto{' '}
+          </NavLink>
         </section>
       </nav>
       <section className="blog__header_s3">
@@ -83,10 +92,6 @@ const NavBar = ({ history }) => {
           <FaYoutube className="blog__header_s3_socialm" />
         </a>
       </section>
-      {/* <NavLink exact to="/contact" className="btn__contact hidden__mobile">
-        {' '}
-        Contacto{' '}
-      </NavLink> */}
     </header>
   );
 };
