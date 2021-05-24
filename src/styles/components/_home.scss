@@ -1,5 +1,30 @@
 //Section1
 
+.blog__screen__s1 {
+  background: url(../../assets/butterfly.jpeg) center center/cover no-repeat;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  object-fit: contain;
+}
+
+.blog__screen__s1 h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.blog__screen__s1 p {
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .home-screen__s__one {
   padding: 40px 100px 0px; //Top - (left & right) - bottom
   display: flex;
@@ -135,4 +160,13 @@
   width: 48px;
   height: 48px;
   margin: 20px 20px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .blog__screen__s1 h1 {
+    font-size: 4.5rem;
+  }
+  .blog__screen__s1 p {
+    font-size: 4rem;
+  }
 }
