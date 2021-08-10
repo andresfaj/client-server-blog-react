@@ -16,7 +16,7 @@ const DefaultLayout = (props) => {
     <div className="h-screen">
       <DefaultHeader />
       {children}
-      <DefaultFooter className="absolute bottom-0 w-full" />
+      <DefaultFooter />
     </div>
   )
 }
