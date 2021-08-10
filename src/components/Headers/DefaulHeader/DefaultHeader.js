@@ -10,16 +10,20 @@ import { StyledHeader, StyledNav } from "./DefaultHeader.styles"
 import useComponents from "../.."
 import useDefaultHeader from "./hook"
 
+//Assets
+import Logo from "../../../assets/logo.png"
+
 const DefaultHeader = () => {
-  const { useButtons } = useComponents()
+  const { useButtons, useImages } = useComponents()
   const { IconButton } = useButtons()
+  const { Image } = useImages()
 
   const { showNavbar, handleShowNavbar } = useDefaultHeader()
 
   return (
     <StyledHeader>
       <StyledNav>
-        <h1> Hello </h1>
+        <Image src={Logo} alt="Logo naydú jaramillo" className="h-6 w-6" />
         <IconButton onClick={handleShowNavbar} className="text-white">
           {!showNavbar ? (
             <FiMenu className="h-6 w-6" />
