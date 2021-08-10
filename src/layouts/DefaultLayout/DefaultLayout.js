@@ -35,7 +35,7 @@ const DefaultLayout = (props) => {
   const { DefaultFooter } = useFooters()
 
   return (
-    <div className="h-screen">
+    <div className="h-screen flex flex-col">
       <DefaultHeader navLinks={navLinks} />
       {children}
       <DefaultFooter socialLinks={socialLinks} />

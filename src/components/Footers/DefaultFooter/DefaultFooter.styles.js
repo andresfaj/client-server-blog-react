@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import tw from "twin.macro"
 
-export const StyledFooter = styled.footer.attrs({
+export const StyledFooter = styled.footer.attrs((props) => ({
   className: "StyledFooter",
-})`
-  ${tw`absolute bottom-0 w-full bg-primary-500 text-center py-5`}
+}))`
+  ${tw`mt-auto w-full bg-primary-500 text-center py-5`}
 `
 
 export const StyledP = styled.p.attrs({
