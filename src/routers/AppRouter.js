@@ -1,15 +1,15 @@
 //Packages
-import React from "react"
+import React from "react";
 import {
   BrowserRouter as Router,
   Redirect,
   Route,
   Switch,
-} from "react-router-dom"
+} from "react-router-dom";
 
 //Hooks
-import useLayouts from "../layouts"
-import useScreens from "../screens"
+import useLayouts from "../layouts";
+import useScreens from "../screens";
 
 const AppRouter = () => {
   const {
@@ -18,11 +18,11 @@ const AppRouter = () => {
     WorkShopScreen,
     AboutMeScreen,
     ContactScreen,
-  } = useScreens()
-  const { DefaultLayout } = useLayouts()
+  } = useScreens();
+  const { DefaultLayout } = useLayouts();
   return (
-    <DefaultLayout>
-      <Router>
+    <Router>
+      <DefaultLayout>
         <Switch>
           <Route exact path="/" component={HomeScreen} />
           <Route exact path="/blog" component={BlogScreen} />
@@ -31,9 +31,9 @@ const AppRouter = () => {
           <Route exact path="/contact" component={ContactScreen} />
           <Redirect to="/" />
         </Switch>
-      </Router>
-    </DefaultLayout>
-  )
-}
+      </DefaultLayout>
+    </Router>
+  );
+};
 
-export default AppRouter
+export default AppRouter;
