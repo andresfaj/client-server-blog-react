@@ -1,11 +1,16 @@
-import { useState } from "react"
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const useDefaultHeader = () => {
-  const [showNavbar, setShowNavbar] = useState(false)
+  const history = useHistory();
 
-  const handleShowNavbar = () => setShowNavbar(!showNavbar)
+  const [showNavbar, setShowNavbar] = useState(false);
 
-  return { showNavbar, handleShowNavbar }
-}
+  const handleShowNavbar = () => setShowNavbar(!showNavbar);
 
-export default useDefaultHeader
+  const goToHome = () => history.push("/");
+
+  return { showNavbar, handleShowNavbar, goToHome };
+};
+
+export default useDefaultHeader;

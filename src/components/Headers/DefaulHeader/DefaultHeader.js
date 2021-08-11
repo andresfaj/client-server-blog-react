@@ -18,12 +18,17 @@ const DefaultHeader = () => {
   const { IconButton } = useButtons()
   const { Image } = useImages()
 
-  const { showNavbar, handleShowNavbar } = useDefaultHeader()
+  const { showNavbar, handleShowNavbar, goToHome } = useDefaultHeader()
 
   return (
     <StyledHeader>
       <StyledNav>
-        <Image src={Logo} alt="Logo naydú jaramillo" className="h-6 w-6" />
+        <Image
+          src={Logo}
+          alt="Logo naydú jaramillo"
+          className="h-6 w-6 cursor-pointer"
+          onClick={goToHome}
+        />
         <IconButton onClick={handleShowNavbar} className="text-white">
           {!showNavbar ? (
             <FiMenu className="h-6 w-6" />
