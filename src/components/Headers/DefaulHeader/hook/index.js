@@ -8,7 +8,10 @@ const useDefaultHeader = () => {
 
   const handleShowNavbar = () => setShowNavbar(!showNavbar);
 
-  const goToHome = () => history.push("/");
+  const goToHome = () => {
+    history.push("/");
+    setShowNavbar(false);
+  };
 
   return { showNavbar, handleShowNavbar, goToHome };
 };
