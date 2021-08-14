@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa"
+import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 
 const useSocialIcons = () => {
   const socialIconHash = {
@@ -6,8 +6,8 @@ const useSocialIcons = () => {
     instagram: FaInstagram,
     youtube: FaYoutube,
     twitter: FaTwitter,
-  }
-  return { socialIconHash }
-}
+  };
+  return { socialIconHash };
+};
 
-export default useSocialIcons
+export default useSocialIcons;
